@@ -4,10 +4,10 @@ public class Voleur extends Personnage{
    private int nbLarcins = 0;
 
    public Voleur(String nom,Char sexe,Int nbLarcins){
-      Super (String nom,Char sexe)
+      Super (String nom,char sexe);
       nbLarcins = 0;
    }
    public Voleur(String nom,Char Sexe){
-      Super (String nom,Char sexe)
+      Super (String nom,char sexe);
    }
 }

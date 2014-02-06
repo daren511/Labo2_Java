@@ -5,7 +5,7 @@ public class Sorcier extends Personnage{
 
 
    public Sorcier(String nom,Char sexe,String type){
-      Super (String nom,Char sexe);
+      Super (String nom,char sexe);
       type = "";
    }
 }
