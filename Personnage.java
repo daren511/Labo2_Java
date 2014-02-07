@@ -5,8 +5,16 @@ public abstract class Personnage{
    private char sexe;
 
    public Personnage(){
-      nom = "Inconnu";
-      sexe = 'I';
+      nom = "";
+      sexe = '';
+   }
+
+   public SetSexe(char sexe){
+      sexe=this.sexe;
+   }
+
+   public GetSexe(sexe){
+      return sexe;
    }
 
 }

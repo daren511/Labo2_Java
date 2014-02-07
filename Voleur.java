@@ -10,4 +10,11 @@ public class Voleur extends Personnage{
    public Voleur(String nom,Char Sexe){
       Super (String nom,char sexe);
    }
+   public String toString(){
+      if(getSexe() == 'M' || getSexe() == 'm' || getSexe() == 'F' || getSexe() == 'f' )
+      {
+
+      }
+      return
+   }
 }

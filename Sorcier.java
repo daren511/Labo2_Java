@@ -8,4 +8,10 @@ public class Sorcier extends Personnage{
       Super (String nom,char sexe);
       type = "";
    }
+   public setType(String type){
+      type = this.type;
+   }
+   public getType(String type){
+      return type;
+   }
 }
