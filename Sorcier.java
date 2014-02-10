@@ -24,7 +24,7 @@ public class Sorcier extends Personnage{
       }
    }
    //Getter du type
-   public String GetType(){
+   public String getType(){
       return type;
    }
    //Getter NbSorciers
@@ -35,11 +35,16 @@ public class Sorcier extends Personnage{
    public String toString(){
       String chaine = "";
       if(getSexe() == 'M' || getSexe() == 'm'){
-         chaine = "Mon nom est " + super.getNom() + " et je suis un sorcier de type " + GetType();
+         chaine = "Mon nom est " + super.getNom() + " et je suis un sorcier de type " + getType();
       }
       else if(getSexe() == 'F' || getSexe() == 'f'){
-         chaine = "Mon nom est " + super.getNom() + " et je suis une sorcière de type " + GetType();
+         chaine = "Mon nom est " + super.getNom() + " et je suis une sorcière de type " + getType();
       }
       return chaine;
    }
+   @Override
+      public boolean equals(Object objet)
+      {
+        return objet.equals(getType());
+      }
 }

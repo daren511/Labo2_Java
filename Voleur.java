@@ -5,7 +5,7 @@ final public class Voleur extends Personnage {
 
    //Déclaration privée du nbLarcins
    private int nbLarcins;
-	
+
    //Constructeur 3 params
    public Voleur(String nom,char sexe,int nbLarcins){
       super (nom,sexe);
@@ -30,7 +30,7 @@ final public class Voleur extends Personnage {
       }
       return chaine;
    }
-   
+
    //Getter NbVoleurs
    static public int getNbVoleurs(){
       return nbVoleur;
@@ -43,4 +43,9 @@ final public class Voleur extends Personnage {
    public void incNbLarcins(){
       nbLarcins++;
    }
+      @Override
+      public boolean equals(Object objet)
+      {
+        return objet.equals(getNbLarcins());
+      }
 }
