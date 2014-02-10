@@ -43,9 +43,10 @@ final public class Voleur extends Personnage {
    public void incNbLarcins(){
       nbLarcins++;
    }
-      @Override
-      public boolean equals(Object objet)
-      {
-        return objet.equals(getNbLarcins());
-      }
+   //surchage de loperateur equals pour regarder les voleurs
+   @Override
+   public boolean equals(Object objet)
+   {
+     return objet.equals(getNbLarcins());
+   }
 }

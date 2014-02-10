@@ -42,6 +42,7 @@ public class Sorcier extends Personnage{
       }
       return chaine;
    }
+   //surchage de loperateur equals pour regarder les sorciers
    @Override
       public boolean equals(Object objet)
       {
