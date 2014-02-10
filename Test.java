@@ -28,7 +28,6 @@ public class Test {
       pers[ 3 ] = new Voleur( "Zarpeur", 'M' );
       pers[ 4 ] = new Voleur( "Filouzine", 'F', 7 );
       pers[ 5 ] = new Voleur( "Ombro", 'M', 50 );
-
       pers[ 6 ] = new Sorcier( "Zoumtor", 'M', "air" );
       pers[ 7 ] = new Sorcier( "Erzag", 'F', "terre" );
 
