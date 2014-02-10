@@ -5,18 +5,21 @@ final public class Voleur extends Personnage {
 
    //Déclaration privée du nbLarcins
    private int nbLarcins;
-
+	
+   //Constructeur 3 params
    public Voleur(String nom,char sexe,int nbLarcins){
       super (nom,sexe);
       this.nbLarcins = nbLarcins;
       this.nbVoleur++;
    }
+   //Constructeur 2 params
    public Voleur(String nom,char sexe){
       super (nom,sexe);
       this.nbLarcins = 0;
       this.nbVoleur++;
 
    }
+   // Function ToString de concaténation pour resultat final
    public String toString(){
       String chaine = "";
       if(getSexe() == 'M' || getSexe() == 'm'){
@@ -27,12 +30,16 @@ final public class Voleur extends Personnage {
       }
       return chaine;
    }
+   
+   //Getter NbVoleurs
    static public int getNbVoleurs(){
       return nbVoleur;
    }
+   //Getter NbLarcins
    public int getNbLarcins(){
       return nbLarcins;
    }
+   // Incrémentation NbLarcins
    public void incNbLarcins(){
       nbLarcins++;
    }

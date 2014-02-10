@@ -6,28 +6,32 @@ public class Sorcier extends Personnage{
    //Déclaration privée du type de sorcier
    private String type = "inconnu";
 
-
+   //Construction a 3 params
    public Sorcier(String nom,char sexe,String type){
       super(nom,sexe);
       this.setType(type);
       this.nbSorciers++;
    }
+   //Constructeur a 2 params
    public Sorcier(String nom,char sexe){
       super(nom,sexe);
       this.nbSorciers++;
    }
+   //Setter du type
    public void setType(String type){
       if(type.equals("eau")||type.equals("feu")||type.equals("terre")||type.equals("air")){
          this.type = type;
       }
    }
+   //Getter du type
    public String GetType(){
       return type;
    }
-
+   //Getter NbSorciers
    static public int getNbSorciers(){
       return nbSorciers;
    }
+   // Function toString concaténation pour results final
    public String toString(){
       String chaine = "";
       if(getSexe() == 'M' || getSexe() == 'm'){
