@@ -6,7 +6,7 @@ public abstract class Personnage{
    
    // Constructeur 2 params
    public Personnage(String nom,char sexe){
-      this.nom = nom;
+      setNom(nom);
       setSexe(sexe);
    }
    //Setter du sexe
@@ -25,6 +25,9 @@ public abstract class Personnage{
    }
    //Setter du Nom
    public void setNom(String nom){
-      this.nom = nom;
+      //verifie si le nom est pas seulement des espace blancs
+      if(nom.trim().length() > 0){
+         this.nom = nom;
+      }
    }
 }
